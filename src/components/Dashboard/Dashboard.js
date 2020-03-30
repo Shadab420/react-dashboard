@@ -4,6 +4,7 @@ import Appbar from '../Menus/Appbar';
 import PieChart from '../Charts/PieChart';
 import { Grid, Paper, makeStyles } from '@material-ui/core';
 import LineChart from '../Charts/LineChart';
+import TinyLineChart from '../Charts/TinyLineChart';
 
 
   
@@ -18,20 +19,18 @@ const Dashboard = () => {
     return (
         <div>
           <Appbar>
-            <Grid container spacing={3}>
-                <Grid item xs>
-                  
+            <Grid container spacing={3} xs={12} md={12}>
+                <Grid item xs={12} md={4}>
+                  <TinyLineChart />
+                </Grid>
+                {/* <Grid item xs={12} md={3}>
+                <TinyLineChart />
+                </Grid>
+                <Grid item xs={12} md={3}>
+                <TinyLineChart />
+                </Grid> */}
+                <Grid item xs={12} md={4}>
                   <PieChart></PieChart>
-                  
-                </Grid>
-                <Grid item xs>
-                  
-                </Grid>
-                <Grid item xs>
-                  
-                </Grid>
-                <Grid item xs>
-                  
                 </Grid>
               </Grid>
               <Grid container spacing={3}>

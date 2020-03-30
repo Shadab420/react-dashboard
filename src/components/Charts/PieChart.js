@@ -39,7 +39,7 @@ const PieChart = () => {
     const classes = useStyles();
 
     return (
-        <ResponsiveContainer>
+        <ResponsiveContainer width="99%" aspect={3}>
         <Paper className={classes.paper}>
             
             <Grid container>
@@ -52,15 +52,15 @@ const PieChart = () => {
             </Grid>
             
             <Grid container spacing={3} md={12} xs={12}>
-                <Grid item xs={7} md={7}>
-                        <PChart width={500} height={300} >
+                <Grid item xs={6} md={6}>
+                        <PChart width={500} height={200} >
                     
                             <Pie
                                 data={data}
-                                cx={150}
-                                cy={150}
+                                cx={75}
+                                cy={90}
                                 innerRadius={60}
-                                outerRadius={80}
+                                outerRadius={70}
                                 fill="#8884d8"
                                 paddingAngle={5}
                                 dataKey="value"
@@ -73,7 +73,7 @@ const PieChart = () => {
                             
                         </PChart>
                 </Grid>
-                <Grid item xs={5}>
+                <Grid item xs={6} md={6}>
 
                     <List>
                         {

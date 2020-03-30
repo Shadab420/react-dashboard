@@ -17,7 +17,7 @@ const Signup = (props) => {
     return (
 
         <div>
-            <Typography variant="h3" className={classes.welcomeText}>Welcome to Dashboard</Typography>
+            <Typography variant="h3" className={classes.welcomeText}>Create New Account</Typography>
             <Button className={classes.googleSignInBtn}>
                 <Avatar alt="google" src={require("../../../images/sign-in-google.png")} className={classes.avatar} />
                 <Typography variant="p" className={classes.googleText}>
